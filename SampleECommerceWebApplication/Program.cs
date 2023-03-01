@@ -17,8 +17,6 @@ namespace SampleECommerceWebApplication
                 .ConfigureAppConfiguration((context, config) =>
                 { 
                         config.ConfigureKeyVault();
-                    var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("VaultUri"));
-                    config.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
                 })
                 .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
     }

@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -15,14 +15,16 @@
       "applicationUrl": "https://localhost:7074;http://localhost:5268",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "VaultUri": "https://productloginkeyvault.vault.azure.net/"
+        "AZURE_USERNAME": "gauri.anande.ibm.com@outlook.com"
       }
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "VaultUri": "https://productloginkeyvault.vault.azure.net/",
+        "AZURE_USERNAME": "gauri.anande.ibm.com@outlook.com"
       }
     }
   }
