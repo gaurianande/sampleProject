@@ -15,7 +15,7 @@ namespace SampleECommerceWebApplication
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
-                {
+                { 
                         config.ConfigureKeyVault();
                     var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("VaultUri"));
                     config.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
